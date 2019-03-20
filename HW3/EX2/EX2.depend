@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1552490324 source:c:\users\barri\documents\trabajos universidad\data structures and alg\hw3\ex2\main.cpp
+	<iostream>
+	<mystack.h>
+
