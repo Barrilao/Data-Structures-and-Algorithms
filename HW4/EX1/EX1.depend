@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1553065668 source:c:\users\barri\documents\trabajos universidad\data structures and alg\hw4\ex1\main.cpp
+	<iostream>
+	"Queue.h"
+
+1553065601 c:\users\barri\documents\trabajos universidad\data structures and alg\hw4\ex1\queue.h
+	<stdio.h>
+
