@@ -1,5 +1,6 @@
 #include <iostream>
-#define NMAX 5
+#include <cmath>
+#define NMAX 20
 
 using namespace std;
 
@@ -50,7 +51,6 @@ class Point{
             cout << coordY << endl;
         }
 
-        //getters
         int getX()
         {
             return coordX;
@@ -60,7 +60,6 @@ class Point{
             return coordY;
         }
 
-        //setters
         void setX(int x)
         {
             this->coordX=x;
@@ -69,22 +68,41 @@ class Point{
         {
             this->coordY=y;
         }
+        
+        double distance(){
+        	return sqrt(pow(coordX,2)+pow(coordY,2));
+		}
+        
 
 };
 
-int main()
-{
-    Point p1;
-    p1.setX(0);
-    p1.setY(0);
+void insertionSort(Point points[], int n) {
+	int i, j;
+	Point key;
+	for (i = 1; i < n; i++) {
+		key = points[i];
+		j = i - 1;
+		while (j >= 0 && points[j].distance() > key.distance()) {
+			points[j + 1] = points[j];
+			j = j - 1;
+		}
+		points[j + 1] = key;
+	}
+}
 
-    p1.moveX(2);
-    p1.moveY(2);
-    p1.print();
-    p1.moveX(4);
-    p1.print();
-    p1.moveY(3);
-    p1.print();
+int main() {
+	Point p1(1, 2);
+	Point p2(2, 2);
+	Point p3(3, 3);
+	Point p4(3, 2);
+	Point p5(1, 1);
+	Point points[5] = { p1, p2, p3, p4, p5 };
+	for (int i = 0; i < 5; i++)
+		cout << points[i].getX() << ", " << points[i].getY() << "; ";
+	cout << "\n";
+	insertionSort(points, 5);
+	for (int i = 0; i < 5; i++)
+		cout << points[i].getX() << ", " << points[i].getY() << "; ";
 
-    return 0;
+	return 0;
 }
