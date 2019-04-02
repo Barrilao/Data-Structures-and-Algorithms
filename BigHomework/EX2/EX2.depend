@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1553986545 source:c:\users\barri\documents\trabajos universidad\data structures and alg\bh\ex2\main.cpp
+	<iostream>
+	<cstring>
+	"building.h"
+
+1553986628 c:\users\barri\documents\trabajos universidad\data structures and alg\bh\ex2\building.h
+	<iostream>
+	"node.h"
+	"mystack.h"
+
+1553969772 c:\users\barri\documents\trabajos universidad\data structures and alg\bh\ex2\node.h
+	<iostream>
+
+1553977281 c:\users\barri\documents\trabajos universidad\data structures and alg\bh\ex2\mystack.h
+
+1553986674 source:c:\users\barri\documents\trabajos universidad\data structures and alg\sanchezrodriguezjuanhw1\ex2\main.cpp
+	<iostream>
+	<cstring>
+	"building.h"
+
+1553986628 c:\users\barri\documents\trabajos universidad\data structures and alg\sanchezrodriguezjuanhw1\ex2\building.h
+	<iostream>
+	"node.h"
+	"mystack.h"
+
+1553969772 c:\users\barri\documents\trabajos universidad\data structures and alg\sanchezrodriguezjuanhw1\ex2\node.h
+	<iostream>
+
+1553977281 c:\users\barri\documents\trabajos universidad\data structures and alg\sanchezrodriguezjuanhw1\ex2\mystack.h
+

@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1553986199 source:c:\users\barri\documents\trabajos universidad\data structures and alg\bh\ex3\main.cpp
+	<iostream>
+	"PriorityQueue.h"
+
+1553986177 c:\users\barri\documents\trabajos universidad\data structures and alg\bh\ex3\priorityqueue.h
+	<bits/stdc++.h>
+	"MyStack.h"
+
+1553983618 c:\users\barri\documents\trabajos universidad\data structures and alg\bh\ex3\mystack.h
+	"node.h"
+
+1553980109 c:\users\barri\documents\trabajos universidad\data structures and alg\bh\ex3\node.h
+	<iostream>
+
