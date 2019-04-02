@@ -3,17 +3,18 @@
 
 using namespace std;
 
-void radixsort(int data[], int n) {
+void radixsort(int number[], int n) {
 int  k, factor=1;
-const int radix = 10;
-const int digits = 10;
-Queue<int> queues[radix];
-for (int i=0;i<digits;factor*=radix,i++){
+const int radi = 10;
+const int dig = 10;
+Queue<int> queues[radi];
+for (int i=0;i<dig;factor*=radi,i++){
 	for (int j=0;j<n;j++)
-		queues[(data[j]/factor)%radix].enqueue(data[j]);
-	for (int j=k=0;j<radix;j++)
-		while (!queues[j].isEmpty())
-			data[k++]=queues[j].dequeue();
+		queues[(number[j]/factor)%radi].enqueue(number[j]);
+	for (int j=k=0;j<radi;j++)
+		while (!queues[j].isEmpty()){
+			number[k++]=queues[j].dequeue();
+		}
 	}
 }
 
